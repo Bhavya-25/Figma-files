@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multy Step form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- personal info Modal -->
+    <section class="personal_info_modal active">
+        <aside class="personal_info_sideBar">
+            <div class="sidebar_content">
+                <h3 class="sidebar_number active">1</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 1</p>
+                    <h3 class="sidebar_heding">YOUR INFO</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">2</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 2</p>
+                    <h3 class="sidebar_heding">SELECT PLAN</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">3</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 3</p>
+                    <h3 class="sidebar_heding">ADD-ONS</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">4</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 4</p>
+                    <h3 class="sidebar_heding">SUMMARY</h3>
+                </div>
+            </div>
+        </aside>
+        <div class="personal_form">
+            <h3 class="Personal_info_heading">Personal info</h3>
+            <p class="Personal_info_para">Please provide your name, email address, and phone number.</p>
+            <form> 
+                <label class="form_lable">
+                    name
+                    <input type="text" placeholder="e.g. Stephen King" class="personal_form_input" id="nameInput">
+                    <p class="input_error">This field is required</p>
+                </label>
+                <label class="form_lable">
+                    Email Address
+                    <input type="email" placeholder="e.g. stephenking@lorem.com" id="emailInput" class="personal_form_input">
+                    <p class="input_error">This field is required</p>
+                </label>
+                <label class="form_lable">
+                    Phone Number
+                    <input type="number" placeholder="e.g. +1 234 567 890" id="phoneInput" class="personal_form_input">
+                    <p class="input_error">This field is required</p>
+                </label>
+            </form>
+            <button id="formNextBtn">Next Step</button>
+        </div>
+    </section>
+
+    <!-- Select your plan -->
+    <section class="personal_info_modal select-page">
+        <aside class="personal_info_sideBar">
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">1</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 1</p>
+                    <h3 class="sidebar_heding">YOUR INFO</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number active">2</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 2</p>
+                    <h3 class="sidebar_heding">SELECT PLAN</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">3</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 3</p>
+                    <h3 class="sidebar_heding">ADD-ONS</h3>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <h3 class="sidebar_number">4</h3>
+                <div class="sidebar_text">
+                    <p class="step_text">STEP 4</p>
+                    <h3 class="sidebar_heding">SUMMARY</h3>
+                </div>
+            </div>
+        </aside>
+        <div class="personal_form">
+            <h3 class="Personal_info_heading">Select your plan</h3>
+            <p class="Personal_info_para">You have the option of monthly or yearly billing.</p>
+            
+
+
+            <div class="plan_cards">
+                <div class="cards">
+                    <img src="assets/icon/arade.png" class="card_img">
+                    <h3 class="card_heading">Arcade</h3>
+                    <p class="card_para">$9/mo</p>
+                    <p class="card_para_year">$90/yr</p>
+                    <p class="card_para_free">2 months free</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/icon/advance.png" class="card_img">
+                    <h3 class="card_heading">Arcade</h3>
+                    <p class="card_para">$12/mo</p>
+                    <p class="card_para_year">$120/yr</p>
+                    <p class="card_para_free">2 months free</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/icon/pro.png" class="card_img">
+                    <h3 class="card_heading">Arcade</h3>
+                    <p class="card_para">$15/mo</p>
+                    <p class="card_para_year">$150/yr</p>
+                    <p class="card_para_free">2 months free</p>
+                </div>
+            </div>
+            <div class="monthly_year_btn_content">
+                <h3 class="monthly_btn_hrading">Monthly</h3>
+                <div class="coustom_checkbox">
+                    <input class="devheader_btn" type="checkbox" id="switch" /><label class="devheader_btn_label"
+                    for="switch">
+                </label>
+                </div>
+                <h3 class="monthly_btn_hrading">Yearly</h3>
+            </div>
+            <div class="form_btn">
+                <button class="previous_btn">Go Back</button>
+                <button class="Next_btn form-next-btn plan_next_btn">Next Step</button>
+            </div>
+        </div>
+    </section>
+    <!-- Pick add-ons -->
+        <section class="personal_info_modal pick_addons_page">
+            <aside class="personal_info_sideBar">
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">1</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 1</p>
+                        <h3 class="sidebar_heding">YOUR INFO</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">2</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 2</p>
+                        <h3 class="sidebar_heding">SELECT PLAN</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number active">3</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 3</p>
+                        <h3 class="sidebar_heding">ADD-ONS</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">4</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 4</p>
+                        <h3 class="sidebar_heding">SUMMARY</h3>
+                    </div>
+                </div>
+            </aside>
+            <div class="personal_form">
+                <h3 class="Personal_info_heading">Pick add-ons</h3>
+                <p class="Personal_info_para">Add-ons help enhance your gaming experience.</p>
+                <div class="price_cards">
+                    <div class="checkbox_content">
+                        <input type="checkbox" class="coustom_checkbox"/>
+                        <span>
+                            <h3 class="checkbox_heading">Online service</h3>
+                            <p class="checkbox_text">Access to multiplayer games</p>
+                        </span>
+                    </div>
+                    <p class="price_text">+$1/mo</p>
+                    <p class="price_text_yearly">+$10/yr</p>
+                </div>
+                <div class="price_cards">
+                    <div class="checkbox_content">
+                        <input type="checkbox" class="coustom_checkbox"/>
+                        <span>
+                            <h3 class="checkbox_heading">Larger storage</h3>
+                            <p class="checkbox_text">Extra 1TB of cloud save</p>
+                        </span>
+                    </div>
+                    <p class="price_text">+$2/mo</p>
+                    <p class="price_text_yearly">+$20/yr</p>
+                </div>
+                <div class="price_cards">
+                    <div class="checkbox_content">
+                        <input type="checkbox" class="coustom_checkbox"/>
+                        <span>
+                            <h3 class="checkbox_heading">Online service</h3>
+                            <p class="checkbox_text">Access to multiplayer games</p>
+                        </span>
+                    </div>
+                    <p class="price_text">+$2/mo</p>
+                    <p class="price_text_yearly">+$20/yr</p>
+                </div>
+                <div class="form_btn">
+                    <button class="previous_btn">Go Back</button>
+                    <button class="Next_btn form-next-btn add-on_next-btn">Next Step</button>
+                </div>
+            </div>
+        </section>
+        <!-- Finishing up -->
+        <section class="personal_info_modal finishing_page">
+            <aside class="personal_info_sideBar">
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">1</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 1</p>
+                        <h3 class="sidebar_heding">YOUR INFO</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">2</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 2</p>
+                        <h3 class="sidebar_heding">SELECT PLAN</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">3</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 3</p>
+                        <h3 class="sidebar_heding">ADD-ONS</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number active">4</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 4</p>
+                        <h3 class="sidebar_heding">SUMMARY</h3>
+                    </div>
+                </div>
+            </aside>
+            <div class="personal_form">
+                <h3 class="Personal_info_heading">Finishing up</h3>
+                <p class="Personal_info_para">Double-check everything looks OK before confirming.</p>
+                <div class="finish_card">
+                    <div class="finish_card_content">
+                        <div>
+                            <h3 class="plan_heading">Arcade (Monthly)</h3>
+                            <button class="change_btn">change</button>
+                        </div>
+                        <p class="finsish_price"></p>
+                    </div>
+                    <div class="finishing_service_content">
+                        <!-- <div class="online_service_content">
+                            <h3 class="online_service_heading">Online service</h3>
+                            <p class="online_service_price">+$1/mo</p>
+                        </div> -->
+                        <!-- <div class="online_service_content">
+                            <h3 class="online_service_heading">Larger storage</h3>
+                            <p class="online_service_price">+$2/mo</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="online_service_content">
+                    <h3 class="finish_Total_heading "></h3>
+                    <p class="Total_price">+$12/mo</p>
+                </div>
+                <div class="form_btn">
+                    <button class="previous_btn">Go Back</button>
+                    <button class="Next_btn form-next-btn" id="confirmBtn">Confirm</button>
+                </div>
+            </div>
+        </section>
+        <!-- Finishing up -->
+        <section class="personal_info_modal thankyou_page" id="thankYouPage">
+            <aside class="personal_info_sideBar">
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">1</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 1</p>
+                        <h3 class="sidebar_heding">YOUR INFO</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">2</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 2</p>
+                        <h3 class="sidebar_heding">SELECT PLAN</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">3</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 3</p>
+                        <h3 class="sidebar_heding">ADD-ONS</h3>
+                    </div>
+                </div>
+                <div class="sidebar_content">
+                    <h3 class="sidebar_number">4</h3>
+                    <div class="sidebar_text">
+                        <p class="step_text">STEP 4</p>
+                        <h3 class="sidebar_heding">SUMMARY</h3>
+                    </div>
+                </div>
+            </aside>
+                <div class="thankyou_content">
+                    <img src="assets/icon/thankyou.png" class="thankyou_image"/>
+                    <h2 class="thankyou_heading">Thank you!</h2>
+                    <P class="thankyou_para">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</P>
+                </div>
+        </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
